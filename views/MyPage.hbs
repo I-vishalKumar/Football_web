@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../public/cssFiles/MyPage.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="../public/jsFiles/MyPage.js" defer charset="utf-8">
+    </script>
+    <link rel="icon" type = "image/x-icon" href="../public/photos/favicon.png">
+    <title>template</title>
+  </head>
+
+  <body>
+
+    <main>
+
+        <section id="contents">
+
+           <div class="upper-text">
+
+                <div class="upper-in">
+                   <p>
+
+                     <span id = "name">{{name}}</span>
+                     <!-- <span id = "gmail">xyz@gmail.com</span> -->
+
+                   </p>
+
+                    <span class="setting">
+
+                      <ion-icon name="settings-outline">
+                      </ion-icon>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+          <div class="banner">
+
+          </div>
+
+           <div class="the-box">
+
+            <div class="balance-box margin">
+
+                <div class="balance">
+
+                   <div class="amount balance-same">
+                     <span class="text">Balance</span>
+                     <span class = "num">{{amount}}</span>
+                   </div>
+
+                   <div class="bonus balance-same">
+                     <span class="text">Profit</span>
+                     <span class = "num">{{profit}}</span>
+                   </div>
+
+                   <div class="betting  balance-same">
+                     <span class="text">Bet's</span>
+                     <span class = "num">{{bet}}</span>
+                   </div>
+
+                </div>
+
+                <div class="deposit">
+                    <div class="withdraw-btn">
+                       <a>WITHDRAW</a>
+                    </div>
+                    <div class="deposit-btn">
+                       <a>DEPOSIT</a>
+                    </div>
+                </div>
+
+              </div>
+
+              <a  href="invitation" class="balance-box invitation" style="text-decoration : none">
+
+                  <div class="invitation-text">
+                     <h1 style = " color : #21ABA5 ">
+                       Invite friend's
+                       <span style="color : black">to get bonus</span>
+                     </h1>
+
+                  </div>
+
+                  <div class="invitation-logo">
+
+                  </div>
+
+                </a>
+
+<!-- the fillup box -->
+
+      <div class="balance-box fill-up">
+
+      </div>
+
+<!-- the contact us section -->
+
+     <div class="balance-box contact">
+
+        <div class="c-support-box">
+
+          <h1>
+           <span>
+            <ion-icon name="headset"></ion-icon>
+           </span>
+            Customer support
+          </h1>
+
+          <p>
+           <ion-icon name="chevron-forward-outline">
+            </ion-icon>
+          </p>
+
+       </div>
+
+       <div class="c-support-box">
+
+          <h1>
+            <span>
+            <ion-icon name="book">
+            </ion-icon>
+            </span>
+              Terms and condition
+          </h1>
+
+          <p>
+           <ion-icon name="chevron-forward-outline">
+           </ion-icon>
+          </p>
+
+       </div>
+
+       <div class="c-support-box">
+
+          <h1>
+            <span>
+            <ion-icon name="information-circle">
+            </ion-icon>
+            </span>
+            About us
+          </h1>
+
+          <p>
+          <ion-icon name="chevron-forward-outline">
+          </ion-icon>
+          </p>
+
+       </div>
+
+
+    </div>
+
+
+  </div>
+
+    </section>
+
+        <footer class="footer">
+          <div class="f-logo-di">
+          <a href="index">
+             <ion-icon name="home-outline"></ion-icon>
+             <span>Home</span>
+          </a>
+          </div>
+
+          <div class="f-logo-di">
+            <a href="allBets">
+              <ion-icon name = "football-outline"></ion-icon>
+              <span>All Bets</span>
+            </a>
+
+          </div>
+          <div class="f-logo-di">
+           <a href="Myteams">
+             <ion-icon name="people-outline"></ion-icon>
+             <span>Team</span>
+           </a>
+
+          </div>
+
+          <div class="f-logo-di fa-sm">
+            <a href="MyPage">
+              <ion-icon name = "person"></ion-icon>
+                <span>MY Page</span>
+            </a>
+          </div>
+
+        </footer>
+
+    </main>
+
+ <!-- window section  -->
+
+    <section id="withdraw" class="wind">
+      <div class="w-card">
+
+      <div class="w-cut-btn">
+      <a>X</a>
+      </div>
+
+      <form  action="/mail" method="post">
+
+        <div class="w-inpt">
+          <label>Name</label>
+
+          <input type="text" name="name" value="" onchange="w_check()" placeholder="Enter Beneficiary name." required></input>
+
+        </div>
+
+        <div class="w-inpt">
+          <label>Bank Account No.</label>
+          <input type="number" name="accNo" value="" onchange="w_check()" required placeholder="Enter your account number."></input>
+        </div>
+
+        <div class="w-inpt">
+          <label>IFSCE code</label>
+          <input type="text" onchange="w_check()" name="IFSCE" value="" placeholder="Enter IFSC code." required></input>
+        </div>
+
+        <div class="w-inpt">
+          <label>Bank Branch</label>
+          <input type="text" name="Branch" value="" onchange="w_check()" placeholder="Enter your branch name." required></input>
+        </div>
+
+        <div class="w-inpt">
+          <label>Amount</label>
+          <input type="number" name="Amount" onchange="w_check()" placeholder="Withdrawal amount." value="" required></input>
+        </div>
+        <div class="w-inpt">
+          <label>Withdrawal code.</label>
+          <input type="text" name="withdraw-code" value="" onchange="w_check()" placeholder="Enter withdrawal code" required></input>
+        </div>
+
+       <div class="btn">
+         <button type="submit" name="button">WITHDRAW</button>
+       </div>
+
+      </form>
+
+      <p>For further assistace contact us. <br> Note we charge 10% of the withdrawal amount.</p>
+
+    </div>
+
+   </section>
+
+    <section id="deposit" class="wind" >
+
+        <div class="card">
+          <div class="card-body">
+
+          <div class="c-logo-sec">
+            <div class="logo">
+              <div class="logo-box">
+              </div>
+            </div>
+            <div class="text-sec">
+              <h1>DEPOSIT</h1>
+              <p>CHOOSE YOUR AMOUNT</p>
+            </div>
+          </div>
+
+          <div class="amount-sec">
+            <ul >
+              <li class="deposit-list" value = "1000">1000</li>
+              <li class="deposit-list" value = "5000">5000</li>
+              <li class="deposit-list" value = "2000">2000</li>
+              <li class="deposit-list" value = "10000">10000</li>
+            </ul>
+          </div>
+
+          <form class="" action="/pay" method="post">
+
+            <div class="form-group">
+                <label for="" >PAY TO THIS UPI</label>
+                <input type = "text" class="form-control" disabled  value="clashfb@ybl">
+            </div>
+
+            <div class="form-group">
+              <label for="" >AMOUNT</label>
+              <input class="form-control" type = "number" name="amount" value="" required onchange="validate()">
+            </div>
+
+            <div class="form-group">
+                <label for="">REFERENCE NO.</label>
+                <input class="form-control" type="number" name="transaction" value="" required onchange="validate()">
+            </div>
+
+            <div class="form-group form-btns">
+                <div class="cancel-btn">
+                    Cancel
+                </div>
+
+                <button disabled class="btn form-control btn-primary">Done</button>
+            </div>
+
+          </form>
+
+          </div>
+        </div>
+
+    </section>
+
+    <section id="contact-us" class="wind">
+          <div class="c-us-box">
+              <div class="abstract"></div>
+
+              <div class="cut-btn-box">
+                    <button type="button" name="button">X</button>
+              </div>
+
+              <div class="the-shit">
+                 <h1>You can  <span style = "color : #00BBF0">contact us</span></h1>
+                 <h1 class = "mail">Telegram ID - @CSclashfb</h1>
+
+                 <div class="shit-instructions">
+
+                     <h2 style= "color : #00BBF0">You can query us about :-</h2>
+                   <ul>
+
+                     <li>1. Late withdrawal.</li>
+                     <li>2. Having trouble in Deposit.</li>
+                     <li>3. Or anything you want.</li>
+                     <li>4. We are using telegram to reach you faster.</li>
+
+                   </ul>
+
+
+                 </div>
+
+              </div>
+
+          </div>
+    </section>
+    <section id="about-us" class="wind">
+         <div class="about-logo">
+            <div class="a-lg">
+
+            </div>
+            <div class="cut-btn">
+               X
+            </div>
+         </div>
+
+         <section class="shit-talk">
+            <h1>Leading Football Platform Of Asia</h1>
+                 <br>
+            <p>
+
+Nice to meet you! This platform called CLASH FB and its a investment platform. You can earn here 3% - 4% a day and it depends on your capital. and no one lossing here because we have a protection plan if you lose here they will refund all of your losses. What we do with our investment. we invest in Stock market and other investing solution . Overstock has evolved from a fledging startup to a billion-dollar online retailer as a result of a hard-working and creative team.
+We are passionate about doing our part to make life better. We provide high-quality merchandise, great value, and exceptional customer service. We connect people with products and services in new and unexpected ways. We do our part to create dream homes for all.
+From opening our website to artists and small businesses to our full embrace of a blockchain future, we're always looking for what's next</p>
+         </section>
+
+    </section>
+    <section id="terms" class="wind">
+
+      <div class="about-logo">
+         <div class="a-lg">
+
+         </div>
+         <div class="cut-btn">
+            X
+         </div>
+      </div>
+
+      <article>
+        This is a contract between you and CLASH FB . This website and its related services are owned and operated by Clash . By clicking the "CREATE ACCOUNT" or "SIGN UP" button , or by accessing or using the services through CLASH FB website , you agree to all the terms and conditions contained in this Terms of Business. You should read the entire , Terms and conditions carefully.
+  Depending on your country of residence, you may not be able to use all the functions of the site . It is your responsibility to follow those rue and laws in Your country of residence and or services. As long as you agree to and actually grants to you a personal, non-exclusive, non-transferable, non-serviceable and limited right to enter and use the site and the services.
+  If you disagree to the terms and conditions, please do not register.
+
+  Eligibility
+
+ <h3> By registering for an account or accessing the service of the site you represent and warrant that:</h3>
+   <ul>
+     <li>1. you are an individual, legal person or other organization with full legal capacity to enter into this User Agreement between you and CLASH FB.
+     </li> <br>
+     <li>2. You are at least 18 years old or of the legal age in accordance to your relevant jurisdiction.</li><br>
+     <li>3. You cannot use your personal account to act as an intern.
+    </li><br>
+    <li>4. MIN. 3 BET REQUIRED FOR
+    WITHDRAWAL.</li><br>
+    <li>5. MIN. DEPOSIT 1000.</li><br>
+    <li>6. MIN. WITHDRAWAL 200.</li><br>
+    <li>7. DEPOSIT AND WITHDRAW
+     ACORDING TO VIP LEVEL.</li><br>
+    <li>8. IF YOU FOLLOW THE RULE
+    S YOU GET MORE PROFIT.</li><br>
+    <li>9. SELF BETTING IN NOT ALLOWED.</li><br>
+    <li>10. IF YOU HAVE ANY PROBLEM CONTACT CS.</li><br>
+    <li>11. THIS APPLICATION IS DESGINED FOR YOU AND YOU GET BEST EXPERIENCE IN OUR APPLICATION.</li><br>
+    <li>12. WE USE TELEGRAM FOR YOU BETTER EXPERIENCE , FAST REPLY , CONNECT WITH USER AS FAST AS.</li><br>
+
+   </ul>
+
+  </article><br>
+
+  <article>
+        If you disagree to the terms and conditions, please do not register.
+    </section>
+    <section id="settings" class="wind">
+
+     <div class="setting-upper">
+       <span class="cut-btn">X</span>
+     </div>
+
+      <div class="log-out">
+        <form action="/logout" method="post">
+          <button type="submit">Sign Out</button>
+        </form>
+      </div>
+
+     </section>
+    <section id = "big" class = "wind">
+      {{>big}}
+    </section>
+    <section id = "affiliate" class = "wind">
+      <div class="af-cut">
+        <a>X</a>
+      </div>
+      <section class="sec1">
+
+      </section>
+      <section class = "sec2">
+      </section>
+      <section class = "sec3">
+      </section>
+      <section class = "sec4">
+      </section>
+    </section>
+
+  </body>
+
+</html>

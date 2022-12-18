@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="../public/cssFiles/Myteams.css">
+
+    <script src="../public/jsFiles/Myteams.js" defer charset="utf-8"></script>
+      <link rel="icon" type = "image/x-icon" href="../public/photos/favicon.png">
+
+    <title>My teams</title>
+  </head>
+  <body>
+
+        <main>
+
+            <div class="banner">
+
+            </div>
+
+            <section id="contents">
+              <div class="card">
+                  <div class="c-name">
+                     <span>{{user}}</span><span>VIP : {{vip}}</span>
+                  </div>
+                  <div class="c-details">
+                     <p>Member's added : </p>
+                     <span>{{mem}}</span>
+                  </div>
+                  <div class="c-profit">
+                     <p>Extra Profit :-  <span>{{prof}}</span></p>
+                  </div>
+              </div>
+              <div class="head-ing">
+                 <h2>BET HISTORY</h2>
+              </div>
+              <div class="his-sec">
+
+              </div>
+            </section>
+
+            <footer class="footer">
+              <div class="f-logo-di">
+
+              <a href="index">
+                 <ion-icon name="home-outline"></ion-icon>
+                 <span>Home</span>
+              </a>
+
+              </div>
+
+              <div class="f-logo-di">
+                <a href="allBets">
+                  <ion-icon name="football-outline"></ion-icon>
+                  <span>All bet</span>
+                </a>
+
+              </div>
+              <div class="f-logo-di">
+               <a href="Myteams">
+                 <ion-icon name="people"></ion-icon>
+                 <span>Team</span>
+               </a>
+
+              </div>
+
+              <div class="f-logo-di fa-sm">
+                <a href="MyPage">
+                  <ion-icon name = "person-outline"></ion-icon>
+                    <span>My page</span>
+                </a>
+              </div>
+
+            </footer>
+
+        </main>
+
+       <section id="big">
+         {{>big}}
+       </section>
+  </body>
+</html>

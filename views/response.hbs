@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/cssFiles/response.css">
+      <link rel="icon" type = "image/x-icon" href="../public/photos/favicon.png">
+  </head>
+
+  <body>
+    <section name = {{type}}>
+       <div class="card">
+
+        <div class="cut-btn"> <a href="index">X</a> </div>
+
+
+         <span
+        style ="background : {{background}} no-repeat;
+                background-size : 30rem;
+                background-position: center;" ></span>
+         <p>{{response}}</p>
+       </div>
+    </section>
+    <section id = "big">
+      {{>big}}
+    </section>
+  </body>
+
+  <script type="text/javascript">
+
+     const ty = document.querySelector('section');
+     const p = document.querySelector('p');
+     let x = ty.getAttribute('name');
+
+  
+     if(ty.getAttribute('name') == "red"){
+        ty.children[0].style.boxShadow = "0px 0px 50px red";
+        p.style.color = "red";
+     }else{
+       ty.children[0].style.boxShadow = "0px 0px 50px blue";
+       p.style.color = "blue";
+     }
+
+  </script>
+
+</html>
