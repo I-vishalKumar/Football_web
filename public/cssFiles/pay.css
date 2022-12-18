@@ -1,0 +1,132 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#actual_box{
+  height : 100vh;
+  width  : 100vw;
+  background : white;
+}
+
+/* logo section  */
+.logo-sec{
+  padding-top: 2em;
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container{
+  height: 100%;
+  width : 20%;
+  background : url("../photos/newlogo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.upper-sec{
+  height : 12vh;
+  width:  100%;
+  background : url("../photos/recharge.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.upper-sec p{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+.upper-sec span{
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+/* middle section */
+
+.middle-sec{
+  display: flex;
+  height:  25rem;
+  align-items: center;
+}
+
+.middle-sec-pay{
+  flex : 3;
+  height: auto;
+  font-size: 3rem;
+  color : black;
+}
+
+#order-amt{
+  flex : 1;
+  height: 5rem;
+  width: auto;
+  background: white;
+  border : none;
+  margin-left: 20%;
+  color : black;
+  outline: 0;
+  border-bottom : 2px solid #574e4e;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#order-button1{
+  flex : 1;
+  height: 5rem;
+  font-size: 2.2rem;
+  margin-right: 2em;
+}
+
+/* bottm sec */
+
+.bottom-sec{
+  display: flex;
+  font-size: 3rem;
+  height: auto;
+  width: 100%;
+  color : black;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+.bottom-order-id{
+  display: flex;
+  width: 100%;
+  padding-left : 2em;
+}
+.bottom-order-id input{
+  padding-left: 1.2em;
+  outline: 0;
+  border : none;
+  font-size: 2.5rem;
+  background: white;
+}
+.bottom-btns{
+  margin-top: 8em;
+  height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-btns button{
+  width: 30%;
+  height : auto;
+  letter-spacing: 0.2em;
+  border : none;
+  border-bottom: 2px solid black;
+  border-top : 1px solid #e8e7e8;
+  border-radius: 1em;
+  box-shadow: 0 1rem 0 #b3adad;
+  font-size: 2rem;
+  /* border : none; */
+}

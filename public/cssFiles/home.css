@@ -1,0 +1,758 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* .bal */
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Poppins",sans-serif;
+}
+/* upper section */
+
+main{
+  width:  100vw;
+  min-height : -webkit-fill-available;
+  position: relative;
+  background: black;
+}
+
+main .banner{
+  background-image: url(../photos/athelets.jpg);
+  background-position: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start;
+  flex-direction: column;
+  height : 25vh;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  color : white;
+}
+
+.banner-text{
+  backdrop-filter: blur(3px);
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  font-size: 2.3em;
+  display: flex;
+  left : 3rem;
+  top  : 3rem;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-text button{
+  background: #6807F9;
+  color : white;
+  padding : 0.5em 1.5em;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/* middle section  */
+ .virtual{
+   height: 4rem;
+   font-size: 2.3rem;
+   color: blue;
+   letter-spacing: 0.5em;
+   text-align: center;
+   font-weight: 500;
+   padding-top: 0.5em;
+ }
+
+#contents{
+  min-height: -webkit-fill-available;
+  border-radius: 4rem 4rem 0 0;
+  position: absolute;
+  min-width: 100vw;
+  height: auto;
+  z-index: 2;
+  background : #f0f0f0;
+  padding-bottom: 10rem;
+}
+
+.tutorial{
+  width: 100%;
+  min-height : 11.3vh;
+  display: flex;
+  background: #f9f9f9;
+}
+
+.tutorial-text{
+  height: 100%;
+  flex : 5;
+  padding: 2em;
+  padding-right: 0;
+}
+/* conf button */
+.tutorial-logo{
+  background-image: url(../photos/hand.png);
+  border-top-right-radius: 4rem;
+  flex : 2;
+  background-position: center;
+  background-size: contain;
+
+}
+.tutorial-title{
+  display: flex;
+  font-size: 2em;
+}
+.tutorial-text p{
+  /* margin-top: 0.5em; */
+  font-size: 2.5em;
+}
+
+.f-box{
+  margin-top: 1em;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8em;
+  /* border : 1px solid black; */
+  display: flex;
+  max-height : 4vh;
+  min-height: 3vh;
+  width: 100%;
+  padding: 1em 0;
+  background: #f9f9f9;
+}
+.f-box span{
+  padding: 0 3em;
+}
+.f-logo{
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  /* border : 1px solid black; */
+  margin-left: 2em;
+  height : auto;
+  /* width: 3rem; */
+}
+
+
+
+/* middle score cards */
+
+.content-scores{
+  flex-direction: column;
+  border : 1px solid black;
+  background: #ffff;
+  min-height: 17vh;
+  margin-top: 2em;
+  padding : 2em 0;
+  display: flex;
+  width: 100%;
+}
+
+.c-top{
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.c-mid{
+  font-size: 2.2em;
+  display: flex;
+  flex : 2;
+}
+
+.c-mid .team{
+  flex: 1;
+}
+.c-mid .data span{
+  background-image: url("../photos/versus.png");
+  height: 100%;
+  width : 100%;
+  background-position: center;
+  background-size: 12rem;
+  background-repeat: no-repeat;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team span{
+  place-items: center;
+  display: grid;
+  width: 100%;
+  flex : 6;
+}
+.team p{
+  flex : 3;
+  padding: 0.5em 0.2em;
+  width: 100%;
+  text-align: center;
+  line-height: 2rem;
+  overflow: hidden;
+}
+/* main */
+.c-mid span{
+  height : auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* bottom of score card */
+
+.c-bottom{
+  border-top: 1px solid black;
+  padding-inline : 1em;
+  font-size: 1.4rem;
+  display: flex;
+  padding-top: 0.2em;
+  justify-content: center;
+}
+
+.c-bottom-in{
+  flex : 1;
+  margin-top: 0.4em;
+  display: flex;
+  align-items: center;
+}
+.c-bottom-in .in{
+  padding : 0 1em;
+}
+.c-bottom .amount{
+  display: flex;
+  justify-content: flex-end;
+}
+.c-bottom-in span{
+  color : #E33E5A;
+}
+
+/* footer */
+
+.footer{
+  justify-content: space-between;
+  position: fixed;
+  bottom : 0;
+  height : auto;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+}
+.footer .f-logo-di{
+  width : -webkit-fill-available;
+  background: #efefef;
+  height : 100%;
+  border : none;
+}
+.footer .f-logo-di a{
+  text-decoration: none;
+  place-items: center;
+  font-size: 4.8rem;
+  display: grid;
+  border : none;
+  padding: 0.2em 0;
+  height: auto;
+  width : auto;
+  color : #103756;
+}
+.footer .f-logo-di span{
+  text-align: center;
+  font-size: 1.9rem;
+  /* padding-bottom: 0.2em; */
+  bottom: 0;
+  color: #00BBF0;
+}
+
+/* window effect */
+body{
+  display: flex;
+  height : 100vh;
+  position : relative;
+}
+#window{
+
+  position: absolute;
+  min-height : 100vh;
+  background : #73cef8;
+  right: 100vw;
+  width: 100vw;
+  z-index: 4;
+}
+
+
+/* conf button */
+/* window section */
+
+/* titles */
+
+.bord-section{
+  background: url("../photos/newvs.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  padding: 3em 0;
+  height : auto;
+  color : white;
+  width: 100vw;
+}
+.bord{
+  display: flex;
+}
+
+/* upper section */
+.sec-upper{
+  display: flex;
+  align-items: center;
+  /* padding-top: 2em; */
+}
+
+.sec-upper div{
+  place-items: center;
+  font-size : 3rem;
+  text-align: center;
+  display: grid;
+}
+#window .team{
+  height : 20rem;
+  display: flex;
+  flex-direction: column;
+}
+#window .team span{
+  flex : 5;
+}
+#window .team p{
+  font-size: 2.3rem;
+  flex : 2;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* .main-card */
+/* upper inner contents */
+
+.sec-middle{
+  flex : auto;
+  margin-top: 2em;
+}
+.sec-middle div{
+  width   : -webkit-fill-available;
+  /* border  : 1px solid white; */
+  place-items: center;
+  height  : 100%;
+  display: grid;
+
+}
+.bord-team-data span{
+  /* background: url("../photos/versus.png"); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bord-team-data h1{
+  height: 5rem;
+  width: 100%;
+  text-align: center;
+  padding : 0.5em 1em;
+  font-size : 2rem;
+}
+
+/* upper last section*/
+
+.sec-lower{
+  justify-content: center;
+  align-items: center;
+  margin : 0 auto;
+  background: #000002;
+  color :white;
+  width : 50%;
+  height: 7rem;
+}
+.sec-lower p {
+  /* border  : 1px solid violet; */
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  /* padding : 0 2em; */
+}
+.bord-back-btn{
+  flex : 1;
+}
+.bord-text{
+  flex : 3;
+}
+.bord-how-btn{
+  flex : 1;
+}
+
+
+/* team p */
+
+.score-bord-sec{
+  min-height: calc(100vh - 30vh);
+  padding-bottom: 10rem;
+  width: 100vw;
+  background: #d6d6d6;
+}
+
+.titles{
+  height: auto;
+  padding : 1em 2em;
+  text-align: center;
+  font-size: 2.8rem;
+  border-top: 2px solid black;
+  border-bottom : 2px solid blue;
+}
+
+.score-bord-title , .score{
+  background: #ededed;
+  margin: 0 auto;
+  display: flex;
+  width : 100vw;
+}
+/* team p */
+.score p{
+  text-align: center;
+  flex : 1;
+  font-size: 2.5rem;
+}
+.score{
+  margin-top: 2em;
+  padding : 1.5em;
+}
+
+.hey-there{
+  position: absolute;
+  place-items: center;
+  background: #fcfcfcfc;
+  height: 100vh;
+  right : 100vw;
+  width : 100vw;
+  display: grid;
+  z-index: 5;
+}
+
+.hey-there .box{
+  height: 40vh;
+  width: 90vw;
+  display: grid;
+  place-items: center;
+  color : blue;
+  font-size: 3rem;
+}
+
+.back-hey{
+  position: absolute;
+  border : 1px solid white;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left : 3rem;
+  display: flex;
+  width : 100vw;
+  height: 7rem;
+  top : 2em;
+}
+.back-hey span{
+  font-size: 4rem;
+}
+/* window .team p */
+#bet-final{
+
+  position: absolute;
+  min-height : 100vh;
+  /* background : wheat; */
+  backdrop-filter: blur(20px);
+  right: 100vw;
+  width: 100vw;
+  z-index: 4;
+  display: flex;
+  /* place-items: center; */
+  align-items: center;
+  justify-content: center;
+
+}
+.main-card{
+  border : 1px solid black;
+  /* justify-content: center; */
+  padding: 2em 0;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  border-radius: 1em;
+  background: #dddddd;
+  width: 90vw;
+}
+
+.bet-card{
+  background: #fafafa;
+  border : 1px solid black;
+  flex-direction: column;
+  display: flex;
+  height: 25rem;
+  border-radius : 2rem;
+  padding : 1em 0;
+  width: 90%;
+}
+
+.bet-score{
+  flex : 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+}
+.bet-score-data{
+  height : 100%;
+  width : 50%;
+  display: flex;
+  font-size: 1.6rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bet-score-data span{
+   /* border : 1px solid black; */
+   /* place-items: center; */
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   font-size : 3rem;
+   display: flex;
+   width: 10rem;
+   flex : 2;
+}
+.bet-s{
+  overflow: hidden;
+  padding : 0.2em;
+  flex : 1;
+  text-align: center;
+  width: 100%;
+}
+
+.bet-teams{
+  flex : 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b-team1 , .b-team2 , .b-data{
+  padding-top: 2em;
+  flex : 1;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  height : 100%;
+}
+
+.bet-teams span{
+  background-image: url(../photos/versus.png);
+  background-position: center;
+  background-repeat: no-repeat;;
+  background-size: cover;
+  flex : 2;
+  width: 80%;
+  height : 30%;
+}
+
+.bet-teams p{
+  font-size: 1.7rem;
+  text-align: center;
+  flex : 1;
+}
+
+
+.bet-details{
+  /* border : 1px solid black; */
+  margin-top: 1em;
+  height : 100%;
+  width: 90%;
+  background: #f2f2f2f2;
+  box-shadow: 1px 10px 10px;
+  border-radius: 2em;
+}
+.b-detail{
+  display: flex;
+  /* border : 1px solid black; */
+  width: 100%;
+  height: 15rem;
+}
+.b-amount p{
+  text-decoration-line: underline;
+
+}
+.b-detail div{
+  flex : 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.b-detail div p {
+  flex : 1;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.b-detail div input{
+  flex : 1;
+  background: none;
+  border :none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.b-detail div span{
+  font-size : 1.6rem;
+  font-weight: 400;
+  flex : 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width : 100%;
+  height: 100%;
+}
+.b-choose{
+  grid-template-columns: auto auto auto auto ;
+  display: grid;
+  grid-gap: 2em;
+  padding : 2em;
+  height : 20rem;
+  width: 100%;
+}
+
+.b-choose div{
+  border : 1px solid black;
+  height : 100%;
+  width: 100%;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.b-choose div:hover{
+  background: #f9f9f9;
+}
+
+/* .bord-section */
+.b-balance{
+  width: 100%;
+  height : 5rem;
+  display: flex;
+  justify-content: flex-start;
+  padding : 0 2em;
+}
+.bal{
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  display: flex;
+  width: auto;
+}
+.bal span{
+  padding-left: 1rem;
+}
+
+.b-btns{
+  margin-top: 3em;
+  display: flex;
+  width: 100%;
+  height : auto;
+  justify-content: space-between;
+  padding : 0 2em;
+}
+.b-btns div{
+  border: 1px solid black;
+  border-radius: 2rem;
+  width: 20rem;
+  height : 8rem;
+  font-size: 2.2rem;
+  display: grid;
+  place-items: center;
+}
+.cancel{
+  border-color : aqua;
+}
+.conf button{
+  background : #888888;
+  height : 100%;
+  width: 100%;
+  font-size: 2.2rem;
+  color : white;
+}
+/* bord-section */
+.response{
+  /* border : 1px solid black; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height : 9rem;
+  margin-top: 3em;
+}
+.response p{
+  width: 100%;
+  height : auto;
+  font-size: 2.4rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+#big{
+  position: absolute;
+  min-height : 100vh;
+  width: 100vw;
+  z-index: 5;
+  right: 100vw;
+  display: flex;
+  align-items: center;
+}
+#big main{
+text-align: center;
+margin: auto auto;
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+background: #4a4a4a;
+color: #2cf4ffaa;
+}
+
+
+
+ @media only screen and (min-device-width : 600px){
+   #big{
+     animation: come 1s forwards;
+   }
+ }
+
+@keyframes come{
+  from{
+    right : 100vw;
+  }
+  to{
+    right : 0vw;
+  }
+}
+
+@keyframes go{
+  from{
+    right : 0vw;
+    }to{
+      right : 100vw;
+    }
+  }

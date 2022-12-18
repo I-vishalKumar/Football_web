@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section{
+  height: 100vh;
+  width: 100vw;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  height: 50vh;
+  width: 90vw;
+  background: #fdfdfd;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.card span{
+  height: 70%;
+  width: 100%;
+
+}
+.cut-btn{
+  width: 100%;
+  height: 10%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cut-btn a{
+  padding: 0.5em 1em;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color : black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.card p{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  letter-spacing: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  padding : 1em;
+}
+#big{
+  position: absolute;
+  min-height : 100vh;
+  width: 100vw;
+  z-index: 5;
+  right: 100vw;
+  display: flex;
+  align-items: center;
+}
+#big main{
+text-align: center;
+margin: auto auto;
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+background: #4a4a4a;
+color: #2cf4ffaa;
+}
+
+
+ @media only screen and (min-device-width : 600px){
+   #big{
+     animation: come 1s forwards;
+   }
+ }

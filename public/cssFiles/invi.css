@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+
+  width: 100vw;
+  height: 100vh;
+  padding: 3em 0;
+  background: #c9c9c9;
+  background: url("../photos/invitation2.png");
+  background-color: #1d1d1dc2;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section h2{
+  padding: 0 0.5em;
+  font-size: 6rem;
+  margin-top: 2rem;
+  color : #ffb72c;
+  text-align: start;
+}

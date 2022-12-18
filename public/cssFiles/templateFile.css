@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins" ,sans-serif;
+}
+
+/* upper section */
+
+main{
+  /* height: ; */
+  width: 100vw;
+  min-height : -webkit-fill-available;
+  position: relative;
+}
+main .banner{
+  height : 25vh;
+  top: 0;
+  background: blue;
+  z-index: 1;
+}
+
+/* middle section  */
+
+#contents{
+  position: absolute;
+  min-height: calc(100vh - 18.5vh);
+  min-width: 100vw;
+  border-radius: 4rem 4rem 0 0;
+  z-index: 2;
+  top: 19vh;
+  background: red;
+}
+
+/* footer */
+
+.footer{
+  justify-content: space-between;
+  position: fixed;
+  height : 7.5vh;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+  bottom: 0;
+}
+.footer .f-logo-di{
+  width : -webkit-fill-available;
+  background: #efefef;
+  height : 100%;
+  border : none;
+}
+.footer .f-logo-di a{
+  place-items: center;
+  font-size: 5.2rem;
+  display: grid;
+  border : none;
+  padding: 0.3em 0;
+  height: auto;
+  width : auto;
+  color : #103756;
+}
+.footer .f-logo-di span{
+  padding-bottom: 0.3em;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  color : #00BBF0;
+}
+
+/* window effect */
+body{
+  display: flex;
+}
+#window{
+  position: absolute;
+  min-height : 100vh;
+  width: 100vw;
+  z-index: 5;
+  right: 0vw;
+  background : wheat;
+}

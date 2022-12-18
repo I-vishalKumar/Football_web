@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+/* c-profit */
+/* footer */
+body{
+  width : 100%;
+  height: 100vh;
+}
+/* upper section */
+
+main{
+  /* height: ; */
+  width: 100vw;
+  min-height : -webkit-fill-available;
+  position: relative;
+}
+main .banner{
+  height : 25vh;
+  top: 0;
+  background: url("../photos/myteams.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* middle section  */
+/* history */
+#contents{
+
+  position: absolute;
+  min-height: calc(100vh - 18.5vh);
+  border-radius: 4rem 4rem 0 0;
+  min-width: 100vw;
+  background: #ff6868;
+  z-index: 2;
+  top: 15vh;
+  padding-bottom: 10rem;
+}
+
+/* middle banner section  */
+
+.card{
+  border-radius : 4em 4em 3em 3em ;
+  flex-direction: column;
+  background: #fcfcfc;
+  margin-top: 0em;
+  display: flex;
+  width : 100%;
+  height : 17vh;
+  color : blue;
+  text-transform: capitalize;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64) 0px -2px 6px 0px inset;
+}
+/* banner-text */
+.card div{
+  display: flex;
+  width : 100%;
+  /* font-size: 2em; */
+
+}
+.c-name , .c-profit{
+  justify-content: center;
+  align-items: center;
+  flex : 0.5;
+  font-size: 2.5em;
+}
+.c-profit{
+  margin-bottom : 1em;
+  justify-content: flex-start;
+  padding : 0 2em;
+}
+.c-name{
+  justify-content: space-evenly;
+  margin-top : 1em;
+  font-size: 2.8em;
+}
+.c-details{
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.3em;
+  padding : 0 2em;
+  flex : 2;
+  /* border : 1px solid black; */
+}
+.c-details span {
+  margin-right: 12em;
+}
+
+.head-ing{
+  justify-content: center;
+  border-radius : 4rem;
+  align-items: center;
+  background: white;
+  margin-top: 2rem;
+  display: flex;
+  height : 8vh;
+  width: 100%;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.his-sec{
+  height: auto;
+}
+
+.member-details{
+  margin-top: 2em;
+  height: -webkit-fill-available;
+  width : 100%;
+  /* border : 1px solid black; */
+}
+.member-details h1{
+  padding: 0.5em 1em ;
+  font-size: 3rem;
+  background: #f6f6f6;
+}
+.member-card-text{
+  justify-content: space-evenly;
+  box-shadow : 0 10px 10px white;
+  align-items: center;
+  background: #f5f5f5;
+  font-size: 2.3rem;
+  margin-top: 1em;
+  display: flex;
+  height: 7rem;
+  width: 100%;
+}
+.member-card-text span{
+
+  text-align: center;
+  flex : 1;
+}
+
+/* footer */
+
+
+.footer{
+  justify-content: space-between;
+  position: fixed;
+  bottom : 0;
+  display: flex;
+  width: 100vw;
+  z-index: 4;
+  /* margin-top : auto; */
+}
+.footer .f-logo-di{
+  width : -webkit-fill-available;
+  background: #efefef;
+  height : 100%;
+  border : none;
+}
+.footer .f-logo-di a{
+  text-decoration : none;
+  place-items: center;
+  font-size: 4.8rem;
+  display: grid;
+  border : none;
+  padding: 0.2em 0;
+  height: auto;
+  width : auto;
+  color: #103756;
+}
+.footer .f-logo-di span{
+  text-align: center;
+  font-size: 1.9rem;
+  height: auto;
+  bottom: 0;
+  color : #00BBF0;
+}
+/* window effect */
+ body{
+  display: flex;
+}
+
+
+#window{
+  position: absolute;
+  min-height : 100vh;
+  background : wheat;
+  right: 100vw;
+  width: 100vw;
+  z-index: 4;
+
+}
+
+.wind{
+  position: absolute;
+  min-height : 100vh;
+  background : #f1efec;
+  right: 100vw;
+  width: 100vw;
+  z-index: 4;
+}
+
+.his-bet{
+  min-height: calc(100vh - 10rem);
+  padding-bottom: 10rem;
+  border : 1px solid ;
+  margin-top: 10rem;
+}
+
+.content-scores{
+  flex-direction: column;
+  border : 1px solid black;
+  background: #ffff;
+  height: 16vh;
+  margin-top: 2em;
+  padding: 2em 0;
+  display: flex;
+  width: 100%;
+}
+
+.c-top{
+  text-align: center;
+  font-size: 2.5em;
+}
+.c-mid{
+  font-size: 2.2em;
+  display: flex;
+  flex : 6;
+  padding-top : 1em;
+}
+
+.c-mid .team{
+  flex: 2;
+  /* height: 100%; */
+}
+
+.c-mid .data span{
+  background-image: url("../photos/versus.png");
+  height: 100%;
+  width : 100%;
+  background-position: center;
+  background-size: 12rem;
+  background-repeat: no-repeat;
+
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team span{
+  place-items: center;
+  display: flex;
+  width: 100%;
+  flex : 6;
+}
+.team p{
+  flex : 3;
+  padding: 0.5em 0.2em;
+  width: 100%;
+  line-height: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.c-mid span{
+  height : auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* bottom of score card */
+
+.c-bottom{
+  border-top: 1px solid black;
+  padding-inline : 1em;
+  font-size: 1.4rem;
+  display: flex;
+  padding-top: 0.2em;
+  justify-content: space-between;
+}
+
+.c-bottom-in{
+  margin-top: 0.4em;
+  display: flex;
+  align-items: center;
+}
+
+.c-bottom-in .in{
+  padding : 0 1em;
+}
+
+.c-bottom-in span{
+  color : #E33E5A;
+}
+
+@keyframes come{
+  from{
+    right : 100vw;
+  }
+  to{
+    right : 0vw;
+  }
+}
+
+@keyframes go{
+  from{
+    right : 0vw;
+    }to{
+      right : 100vw;
+    }
+  }
+
+  /* bord upper section */
+  .bord-section{
+    position: absolute;
+    top: 0;
+    width : 100%;
+    height : 10rem;
+  }
+
+  .sec-upper{
+    justify-content: space-between;
+    font-size: 2.3em;
+    padding : 2em 1em;
+    align-items: center;
+    display: flex;
+    }
+    #big{
+      position: absolute;
+      min-height : 100vh;
+      width: 100vw;
+      z-index: 5;
+      right: 100vw;
+      display: flex;
+      align-items: center;
+    }
+    #big main{
+    text-align: center;
+    margin: auto auto;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: #4a4a4a;
+    color: #2cf4ffaa;
+    }
+
+
+  @media only screen and (min-device-width : 600px){
+       #big{
+         animation: come 1s forwards;
+       }
+     }
